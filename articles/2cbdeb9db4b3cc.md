@@ -30,8 +30,11 @@ APIキーやパスワードなどを第三者に見られてしまう可能性�
 
 ```js
 function getVal() {
-  console.log(PropertiesService.getScriptPropertied().getProperty("API_KEY"));
+  return PropertiesService.getScriptProperties().getProperty("API_KEY");
 }
 ```
 このようにすると”API_KEY”というプロパティに入力されている”値”を参照できます。  
 可読性も上がるのでおすすめです。
+
+# 参考文献
+  - [Class PropertiesService  |  Apps Script  |  Google for Developers](https://developers.google.com/apps-script/reference/properties/properties-service?hl=ja)
