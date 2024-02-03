@@ -30,7 +30,7 @@ APIキーやパスワードなどを第三者に見られてしまう可能性�
 
 ```js
 function getVal() {
-  console.log(PropertiesService.getScriptPropertied().getProperty("API_KEY"));
+  console.log(PropertiesService.getScriptProperties().getProperty("API_KEY"));
 }
 ```
 このようにすると”API_KEY”というプロパティに入力されている”値”を参照できます。  
